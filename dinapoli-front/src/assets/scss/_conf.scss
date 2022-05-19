@@ -1,9 +1,30 @@
 
 /*|---------------| App Color Schema|---------------*/
-$BLUE: #00376C;
-$PINK: #B51942;
-$GRAY: #707070;
+$WHITE: #ffffff;
 $BASE-COLOR: #E6CCB2;
+$BG-DARK: #582F0E;
+$BG-LIGHT: #9C6644;
+$BG-LINEAR: linear-gradient(180deg, #9C6644 0%, #582F0E 65.1%);
+$BTN-COLOR: #365A22;
+
+/*|---------------| IMAGES |---------------*/
+$SM-IMG: 150px;
+$MD-IMG: 300px;
+$LG-IMG: 450px;
+$XL-IMG: 600px;
+
+/*|---------------| FONTS |---------------*/
+$TITLE: 'daughter-of-fortune', Arial, sans-serif;
+$TEXT: 'Roboto', Arial, sans-serif;
+
+$SM-FONT: 16px;
+$MD-FONT: 20px;
+$LG-FONT: 22px;
+
+$SM-TITLE: 60px;
+$MD-TITLE: 70px; 
+$LG-TITLE: 80px;
+$XL-TITLE: 90px;
 
 /*|---------------| BREAKPOINTS|---------------*/
 
