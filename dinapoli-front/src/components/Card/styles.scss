@@ -1,33 +1,47 @@
-.row {
-    display: flex; 
+section {
+    display: flex;
     justify-content: center;
-    align-items: center;
-
-    div { margin: 1em !important; }
-}
-
-.section {
-    &__text {
-        h1 {
-            font-family: $TITLE;
-            font-size: $SM-TITLE;
-            padding-bottom: .5em;
-        }
-        p { font-size: $SM-FONT; }
+    .card {
+        align-items: center !important;
+        width: 55rem!important;
+        background: none;
+        border: none;
     }
-    &__img {
-        overflow: hidden;
-        width: $MD-WIDTH !important;
-        height: $SM-HEIGHT !important;
-
-        img { border-radius: 15px; }
-    }    
+    .card-img, .card-img-top {
+        border-radius: 10px !important; 
+        width: $SM-WIDTH}
+    .card-body {
+        padding: 0;
+        h2 { 
+            font-family: $TITLE; 
+            font-size: $SM-TITLE;
+            margin: .5em 0;
+            text-align: center;
+        }
+        p{
+            font-family: $TEXT;
+            font-size: $SM-FONT;
+        }
+    }
 }
-
 
 
 // $BREAKPOINT-TABLET: 700px;
 @media only screen and (min-width: $BREAKPOINT-TABLET) {
+    .card {
+        flex-direction: row !important;
+        align-items: center;
+        width: 200rem !important;
+        .card-img, .card-img-top {width: $MD-WIDTH;}
+
+        .card-body {
+            padding-left: 2em;
+            h2 {
+                text-align: start;
+                font-size: $MD-TITLE;
+            }
+        }
+    }
     
 }
 
@@ -38,5 +52,15 @@
 
 // $BREAKPOINT-DESK: 1280px;
 @media only screen and (min-width: $BREAKPOINT-DESK) {
+
+    .card-img, .card-img-top {width: $LG-WIDTH !important;}
+    .card-body {
+        padding-left: 4em !important;
+        h2 {
+            text-align: start;
+            font-size: $LG-TITLE !important;
+        }
+        p { font-size: $MD-FONT !important; }
+    }
     
 }

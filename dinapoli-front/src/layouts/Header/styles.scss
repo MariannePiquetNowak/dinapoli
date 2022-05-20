@@ -90,7 +90,7 @@ header {
                     h1 { font-size: 140px !important; }
                     p { font-size: $XL-FONT; }
                 }
-                img {min-width: $LG-WIDTH; height: $LG-WIDTH;}
+                img {min-width: $XL-WIDTH; height: $LG-WIDTH;}
                 div, img {margin: 0 3em;}
             }
         }
