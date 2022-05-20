@@ -4,7 +4,7 @@ import img from "../../assets/images/image-1.png"
 
 const Home = () => {
     return (
-        <main class="Home container mt-5 mb-5">
+        <main class="Home container my-3">
             <Card 
                 reverse="no-reverse" 
                 title="Le Savoir-faire, un état d'esprit" 
