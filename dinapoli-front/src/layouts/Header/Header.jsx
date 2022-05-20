@@ -1,13 +1,15 @@
 import Nav from "../../components/Navbar/Navbar";
 import headImg from '../../assets/images/header-img.png';
 import logo from '../../assets/images/logo-sm.svg';
+import 'animate.css';
+
 
 const Header = () => {
     return (
         <header>
             <Nav />
             <div className='header__bg' style={{ backgroundImage: `url(${headImg})`, backgroundSize: `cover`, backgroundPosition: `center` }}> </div>
-            <div className="header__container">
+            <div className="header__container animate__animated animate__fadeInDown">
                 <img src={logo} alt="dinapoli-logo" />
                 <div className="header__text">
                     <h1>Benvenuto !</h1>

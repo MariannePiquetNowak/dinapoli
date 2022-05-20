@@ -2,16 +2,25 @@
 /*|---------------| App Color Schema|---------------*/
 $WHITE: #ffffff;
 $BASE-COLOR: #E6CCB2;
-$BG-DARK: #582F0E;
+$BG-BROWN: #582F0E;
+$BG-BDARK: #3b2716;
 $BG-LIGHT: #9C6644;
 $BG-LINEAR: linear-gradient(180deg, #9C6644 0%, #582F0E 65.1%);
 $BTN-COLOR: #365A22;
 
 /*|---------------| IMAGES |---------------*/
-$SM-IMG: 150px;
-$MD-IMG: 300px;
-$LG-IMG: 450px;
-$XL-IMG: 600px;
+// $SM-IMG: 200px;
+// $MD-IMG: 400px;
+// $LG-IMG: 600px;
+// $XL-IMG: 800px;
+
+$SM-WIDTH: 200px;
+$MD-WIDTH: 300px;
+$LG-WIDTH: 500px;
+
+$SM-HEIGHT: 300px;
+$MD-HEIGHT: 500px;
+$LG-HEIGHT: 600px;
 
 /*|---------------| FONTS |---------------*/
 $TITLE: 'daughter-of-fortune', Arial, sans-serif;
@@ -19,18 +28,19 @@ $TEXT: 'Roboto', Arial, sans-serif;
 
 $SM-FONT: 16px;
 $MD-FONT: 20px;
-$LG-FONT: 22px;
+$LG-FONT: 24px;
+$XL-FONT: 30px;
 
-$SM-TITLE: 60px;
-$MD-TITLE: 70px; 
-$LG-TITLE: 80px;
-$XL-TITLE: 90px;
+$SM-TITLE: 40px;
+$MD-TITLE: 60px; 
+$LG-TITLE: 70px;
+$XL-TITLE: 80px;
 
 /*|---------------| BREAKPOINTS|---------------*/
 
 // Usage example:  @media #{$BREAKPOINT-DESK}
 
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
-$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
-$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
-$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 480px)";
+$BREAKPOINT-DESK: 1280px;
+$BREAKPOINT-TABLET-LAND: 975px;
+$BREAKPOINT-TABLET: 700px;
+$BREAKPOINT-MOBILE-LAND: 480px;
