@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <main class="Home container mt-3">
             <Cardy
-                reverse="no-reverse" 
+                reverse="reverse" 
                 title="Le Savoir-faire, un état d'esprit" 
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros augue, dapibus ac quam non, fringilla placerat ex." 
                 img={img} 

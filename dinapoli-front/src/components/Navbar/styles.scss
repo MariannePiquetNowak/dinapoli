@@ -15,5 +15,6 @@ nav {
 .offcanvas, .offcanvas-end, .show {
     height: auto !important;
     background: $BG-BDARK !important;
-    div > div > a { color: white !important; }
+    div > div > a{ color: white !important; }
 }
+.btn-close {background-color: white !important;}

@@ -13,7 +13,6 @@ section {
     .card-body {
         padding: 0;
         h2 { 
-            font-family: $TITLE; 
             font-size: $SM-TITLE;
             margin: .5em 0;
             text-align: center;
@@ -23,6 +22,7 @@ section {
             font-size: $SM-FONT;
         }
     }
+    .reverse {flex-direction: column-reverse;}
 }
 
 
@@ -42,6 +42,8 @@ section {
             }
         }
     }
+
+    .reverse {flex-direction: row-reverse !important;}
     
 }
 
@@ -64,3 +66,4 @@ section {
     }
     
 }
+
