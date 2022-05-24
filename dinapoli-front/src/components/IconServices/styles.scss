@@ -1,0 +1,44 @@
+.Services {
+    width: 100vw;
+    left: 0;
+    background: $BG-BROWN;
+    border-top: 2px solid $BASE-COLOR;
+    border-bottom: 2px solid $BASE-COLOR;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    .service {
+        margin: 0 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: $MD-WIDTH;
+        position: relative;
+
+        &__icon {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {width: $SM-WIDTH; height: $SM-WIDTH;}
+
+        .cut-circle {
+            position: absolute;
+            z-index: 2;
+            height: 40px;
+            width: $SM-WIDTH;
+            bottom: 110px !important;
+            left: 0px !important;
+            background-color: $BG-BROWN;
+        }
+        &__text {
+            width: $SM-WIDTH;
+            text-align: center;
+            h5 {font-weight: 700; color: $WHITE}
+        }
+    }
+}

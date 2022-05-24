@@ -21,5 +21,5 @@ code {
   background: linear-gradient(180deg, #9C6644 0%, #582F0E 65.1%);
 }
 
-h1, h2, h3, h4, h5 { font-family: 'daughter-of-fortune', Arial, sans-serif; }
-p { font-family: 'Roboto', Arial, sans-serif; }
+h1, h2, h3 { font-family: 'daughter-of-fortune', Arial, sans-serif; }
+p, h4,h5 { font-family: 'Roboto', Arial, sans-serif; }

@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 const Cardy = ({ reverse, img, title, text }) => {
   return (
-    <section>
+    <section className="Card-dinapoli">
       <Card className={`my-5 ${reverse}`}>
         <Card.Img variant="top" src={img} />
         <Card.Body>

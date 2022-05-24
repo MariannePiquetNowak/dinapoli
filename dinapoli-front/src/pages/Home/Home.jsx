@@ -5,7 +5,7 @@ import img from "../../assets/images/image-1.png"
 
 const Home = () => {
     return (
-        <main class="Home container mt-3">
+        <main className="Home container mt-3">
             <Cardy
                 reverse="reverse" 
                 title="Le Savoir-faire, un état d'esprit" 
