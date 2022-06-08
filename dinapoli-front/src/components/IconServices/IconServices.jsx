@@ -23,7 +23,7 @@ const IconServices = ({icon, title, text}) => {
 
 
     return (
-        <section className="Services py-5 px-3">
+        <section className="Services">
             <div className="service">
                 <div className="service__icon py-2 my-3">
                     <img src={Truck} alt="dinapoli-icons" />
