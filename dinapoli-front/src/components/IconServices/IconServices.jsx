@@ -3,67 +3,55 @@ import React,{ useState, useEffect } from 'react';
 // Icons 
 import Truck from '../../assets/images/truck-icon.svg';
 
-const URL = "http://localhost:8055/items/services"
+const item = 'services';
+
+const URL = `http://localhost:8055/items/${item}`;
 // Remplacer localhost par window.location
 
-const IconServices = ({icon, title, text}) => {
+const IconServices = () => {
 
     const [services, setServices] = useState([]);
+    const [icons, setIcon] = useState([]);
 
     useEffect(() => {
         fetch(`${URL}`, {
             method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
+            headers: new Headers({
+                'Accept': 'application/json',
+              })
         })
         .then(res => res.json())
-
+        .then(datas => setServices(datas.data))
+        .catch(error => {
+            console.error('There was an error with services!', error);
+        });
     }, []);
 
 
     return (
         <section className="Services my-5 py-2 py-md-5">
-            <div className="service">
-                <div className="service__icon py-1 my-3">
-                    <img src={Truck} alt="dinapoli-icons" />
-                    <div className="cut-circle"></div>
-                </div>
-                <div className="service__text">
-                    <h5>Service 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-                </div>
-            </div>
-            <div className="service">
-                <div className="service__icon py-2 my-3">
-                    <img src={Truck} alt="dinapoli-icons" />
-                    <div className="cut-circle"></div>
-                </div>
-                <div className="service__text">
-                    <h5>Service 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-                </div>
-            </div>
-            <div className="service">
-                <div className="service__icon py-2 my-3">
-                    <img src={Truck} alt="dinapoli-icons" />
-                    <div className="cut-circle"></div>
-                </div>
-                <div className="service__text">
-                    <h5>Service 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-                </div>
-            </div>
-            <div className="service">
-                <div className="service__icon py-2 my-3">
-                    <img src={Truck} alt="dinapoli-icons" />
-                    <div className="cut-circle"></div>
-                </div>
-                <div className="service__text">
-                    <h5>Service 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-                </div>
-            </div>
+            {/* mapping */}
+            {
+
+                services.map(service => {
+                    let file_id = service.icon;
+                    const assets_url = `http://localhost:8055/assets/${file_id}`
+                    return (
+
+                        <div className="service">
+                            <div className="service__icon pyx-1 my-3">
+                                <img src={assets_url} alt="dinapoli-icons" />
+                                <div className="cut-circle"></div>
+                            </div>
+                            <div className="service__text">
+                                <h5>{service.titre}</h5>
+                                <p>{service.description}</p>
+                            </div>
+                        </div>
+                    )
+                })
+            }
+            {/* mapping */}
         </section>
     )
         
