@@ -9,6 +9,7 @@ function Pizza() {
                 price="10,9" 
                 text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum" 
             />
+
         </>
      );
 }

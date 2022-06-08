@@ -1,8 +1,5 @@
 import React,{ useState, useEffect } from 'react';
 
-// Icons 
-import Truck from '../../assets/images/truck-icon.svg';
-
 const item = 'services';
 
 const URL = `http://localhost:8055/items/${item}`;

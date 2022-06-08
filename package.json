@@ -12,5 +12,6 @@
   "dependencies": {
     "directus": "^9.9.1",
     "mysql": "^2.18.1"
-  }
+  },
+  "proxy": "http://localhost:8055"
 }

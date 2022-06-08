@@ -1,4 +1,4 @@
-import Nav from "../../components/Navbar/Navbar";
+import Nav from "../../Components/Navbar/Navbar";
 import headImg from '../../assets/images/header-img.png';
 import logo from '../../assets/images/logo-sm.svg';
 import 'animate.css';

@@ -1,7 +1,7 @@
 import React from 'react';
-import Cardy from '../../components/Card/Card';
-import Services from '../../components/IconServices/IconServices';
-import Pizza from "../../components/Menu/Pizza";
+import Cardy from '../../Components/Card/Card';
+import Services from '../../Components/IconServices/IconServices';
+import Menu from "../../Components/Menu/Menu";
 import img from "../../assets/images/image-1.png"
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
                 img={img} 
             />
             <Services />
-            <Pizza />
+            <Menu />
         </main>
     )
 }
