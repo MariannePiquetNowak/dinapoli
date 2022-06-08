@@ -23,9 +23,9 @@ const IconServices = ({icon, title, text}) => {
 
 
     return (
-        <section className="Services">
+        <section className="Services my-5 py-2 py-md-5">
             <div className="service">
-                <div className="service__icon py-2 my-3">
+                <div className="service__icon py-1 my-3">
                     <img src={Truck} alt="dinapoli-icons" />
                     <div className="cut-circle"></div>
                 </div>
