@@ -3,6 +3,7 @@
     justify-content: center;
     .card {
         align-items: center !important;
+        justify-content: center !important;
         background: none;
         border: none;
     }
@@ -34,7 +35,7 @@
         .card-img, .card-img-top {width: $MD-WIDTH;}
 
         .card-body {
-            padding-left: 2em;
+            padding-right: 3em !important;
             h2 {
                 text-align: start;
                 font-size: $MD-TITLE;
@@ -53,7 +54,8 @@
     div .card {width: 1100px !important;}
     .card-img, .card-img-top {width: $LG-WIDTH !important;}
     .card-body {
-        padding-left: 4em !important;
+        padding-right: 10em !important;
+
         h2 {
             text-align: start;
             font-size: $LG-TITLE !important;

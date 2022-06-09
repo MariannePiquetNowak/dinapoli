@@ -13,15 +13,16 @@
             padding: .3em 1em;
             font-weight: bold;
 
-            a {
+            button {
                 color: $BASE-COLOR;
                 padding: 0 0 .5em 0;
                 text-decoration: none;
                 background: linear-gradient(to top, $BASE-COLOR 0%, $BASE-COLOR 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
                 transition: background-size .5s;
+                border: none
               }
               
-              a:hover {
+              button:hover {
                 background-size: 100% 100%;
               }
         }

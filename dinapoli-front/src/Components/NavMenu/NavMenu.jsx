@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const NavMenu = () => {
+const NavMenu = ({setType}) => {
+
     return (
         <>
             <nav className="navbar-menu mb-3">
                 <ul>
-                    <li className="menu-items"><a href="#Pizzas">Les Pizzas</a></li>
-                    <li className="menu-items"><a href="#Panuozzos">Les Panuozzos</a></li>
-                    <li className="menu-items"><a href="#Desserts">Les Desserts</a></li>
+                    <li className="menu-items"><button onClick={() => setType('pizza')}>Les Pizzas</button></li>
+                    <li className="menu-items"><button onClick={() => setType('panuozzo')}>Les Panuozzos</button></li>
+                    <li className="menu-items"><button onClick={() => setType('dessert')}>Les Desserts</button></li>
                 </ul>
             </nav>
         </>
