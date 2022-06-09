@@ -35,7 +35,7 @@ const IconServices = () => {
                     const assets_url = `http://localhost:8055/assets/${file_id}`
                     return (
 
-                        <div className="service">
+                        <div className="service" key={service.id}>
                             <div className="service__icon pyx-1 my-3">
                                 <img src={assets_url} alt="dinapoli-icons" />
                                 <div className="cut-circle"></div>
