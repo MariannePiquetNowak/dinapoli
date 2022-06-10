@@ -5,6 +5,7 @@ const NavMenu = ({setType}) => {
     const [isActive, setIsActive] = useState("active");
 
     const toggleClass = (e) => {
+        e.preventDefault();
         let classes = '';
         let els = document.getElementsByClassName('active');
         if(els){

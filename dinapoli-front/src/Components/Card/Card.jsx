@@ -4,14 +4,12 @@ import { Card } from "react-bootstrap";
 const Cardy = ({ reverse, img, title, text }) => {
   return (
     <section className="Card-dinapoli component">
-      <Card className={`py-5 ${reverse} mx-3 mx-md-3 mx-lg-5`}>
+      <Card className={`pb-md-5 pb-lg-5 my-5 ${reverse} mx-3 mx-md-3 mx-lg-5`}>
         <Card.Img variant="top" src={img} />
         <Card.Body className="mb-5 mb-md-0">
-          <h2>Le Savoir-Faire, un état d'esprit</h2>
+          <h2>{title}</h2>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content. Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            {text}
           </Card.Text>
         </Card.Body>
       </Card>
