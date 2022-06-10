@@ -26,7 +26,7 @@ const IconServices = () => {
 
 
     return (
-        <section className="Services my-5 py-4 py-md-5">
+        <section className="Services py-4 py-md-5">
             {/* mapping */}
             {
 

@@ -4,8 +4,6 @@ import Pizza from './Pizza';
 import Panuozzos from './Panuozzo';
 import Dessert from './Dessert';
 
-const URL = "http://localhost:8055/items/menu_items";
-
 const Menu = () => {
 
     const [type, setType] = useState('pizza') // by default
@@ -23,7 +21,8 @@ const Menu = () => {
     }
 
     return (
-        <section className="py-2 py-md-3 mx-md-3 mx-lg-5 menu">
+        <section className="py-2 py-md-3 menu">
+            <div class="parallax-menu"></div>
             <NavMenu reference={type} setType={setType} />
             <div className="row px-md-3 px-lg-5">
                 {renderSwitch(type)}

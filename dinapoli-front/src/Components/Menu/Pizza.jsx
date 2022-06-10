@@ -5,9 +5,10 @@ import { getItemsFilter } from '../../services/constants';
 function Pizza() {
 
     const [pizzas, setPizza] = useState([])
+    const status = "published"
 
     useEffect(() => {
-        fetch(getItemsFilter("menu_items", "[categorie]=pizza"))
+        fetch(getItemsFilter("menu_items", `[categorie]=pizza&filter[status]=${status}`))
         .then(res => res.json())
         .then(datas => setPizza(datas.data))
         .catch(err => console.error(`Erreur lors de la récupération des pizzas`, err))

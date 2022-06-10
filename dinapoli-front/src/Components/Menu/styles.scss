@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center !important;
     align-items: center;
+    position: sticky;
+    z-index: 1;
     .row {
         padding: 0 1em;
         width: 100%;
@@ -40,8 +42,27 @@
                 border-width: 1px;
                 border: 2px solid $BASE-COLOR;
                 width: 80px;
+                background-color: $BG-BROWN;
+
             }
         }
+    }
+}
+
+@media screen and (min-width: $BREAKPOINT-MOBILE-LAND) {
+    .parallax-menu {
+        background-attachment: fixed; 
+        background-size: 80%; 
+        background-position-y: 3em; 
+        background-position-x: center; 
+        background-repeat: no-repeat; 
+        background-image: url("../../assets/images/pizza-paralax.png");
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0em;
+        z-index: -1;
+
     }
 }
 
@@ -50,6 +71,9 @@
     .foodline { 
         padding-right: 5em !important;
         padding-left: 3em !important;
+    }
+    .parallax-menu {
+        background-size: 80%;
     }
 
 }

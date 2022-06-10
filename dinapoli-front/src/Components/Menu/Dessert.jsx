@@ -5,9 +5,10 @@ import { getItemsFilter } from '../../services/constants';
 const Dessert = () => {
 
     const [desserts, setDessert] = useState([])
+    const status = "published"
 
     useEffect(() => {
-        fetch(getItemsFilter("menu_items", "[categorie]=dessert"))
+        fetch(getItemsFilter("menu_items", `[categorie]=dessert&filter[status]=${status}`))
         .then(res => res.json())
         .then(datas => setDessert(datas.data))
         .catch(err => console.error(`Erreur lors de la récupération des desserts`, err))
