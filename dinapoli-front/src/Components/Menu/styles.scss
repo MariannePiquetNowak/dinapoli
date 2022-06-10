@@ -1,0 +1,54 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    .row {
+        padding: 0 1em;
+
+        .foodline { margin-bottom: 1.5em; }
+
+        .foodline > div  {
+            display: flex;
+            align-items: center;
+            flex-basis: 100%;
+            margin-bottom: 10px;
+            justify-content: space-between;
+
+            h3 { 
+                padding: 5px 10px 3px 10px;
+                text-align: center;
+                margin: 0 !important;
+                width: auto; 
+                border: 2px solid $BASE-COLOR;
+                background-color: $BG-BDARK;
+                line-height: 1em;
+            }
+            div {
+                border-bottom-color: #FFFFFF;
+                margin-left: 10px;
+                margin-right: 10px;
+                flex-grow: 1;
+                border-bottom-style: dotted;
+                border-bottom-width: 2px;
+                height: 0;
+            }
+            strong { 
+                padding: 5px 10px 6px 10px;
+                text-align: center;
+                border-width: 1px;
+                border: 2px solid $BASE-COLOR;
+                width: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $BREAKPOINT-DESK) {
+    .row { min-width: 1280px}
+    .foodline { 
+        padding-right: 5em !important;
+        padding-left: 3em !important;
+    }
+
+}

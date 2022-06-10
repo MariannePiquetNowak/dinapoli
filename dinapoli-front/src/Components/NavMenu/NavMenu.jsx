@@ -4,7 +4,7 @@ const NavMenu = ({setType}) => {
 
     return (
         <>
-            <nav className="navbar-menu mb-3">
+            <nav className="navbar-menu mb-5">
                 <ul>
                     <li className="menu-items"><button onClick={() => setType('pizza')}>Les Pizzas</button></li>
                     <li className="menu-items"><button onClick={() => setType('panuozzo')}>Les Panuozzos</button></li>

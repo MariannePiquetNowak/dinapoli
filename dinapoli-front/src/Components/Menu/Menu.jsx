@@ -23,10 +23,11 @@ const Menu = () => {
     }
 
     return (
-        <section className="menu">
+        <section className="py-2 py-md-3 mx-md-3 mx-lg-5 menu">
             <NavMenu reference={type} setType={setType} />
-
-            {renderSwitch(type)}
+            <div className="row px-md-3 px-lg-5">
+                {renderSwitch(type)}
+            </div>
         </section>
     )
 }
