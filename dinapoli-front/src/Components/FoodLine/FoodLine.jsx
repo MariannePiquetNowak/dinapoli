@@ -1,6 +1,7 @@
 import React from 'react';
 
 function FoodLine ({name, price, text}) {
+
     return ( 
         <div className="food">
             <div>
