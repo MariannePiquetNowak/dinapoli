@@ -3,7 +3,7 @@ import React from 'react';
 function FoodLine ({name, price, text}) {
 
     return ( 
-        <div className="foodline col-sm-6">
+        <div className="foodline col-sm-12  col-lg-6">
             <div>
                 <h3>{name}</h3>
                 <div className="line"></div>

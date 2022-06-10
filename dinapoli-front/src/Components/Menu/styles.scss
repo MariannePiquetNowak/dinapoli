@@ -5,6 +5,7 @@
     align-items: center;
     .row {
         padding: 0 1em;
+        width: 100%;
 
         .foodline { margin-bottom: 1.5em; }
 
@@ -21,7 +22,7 @@
                 margin: 0 !important;
                 width: auto; 
                 border: 2px solid $BASE-COLOR;
-                background-color: $BG-BDARK;
+                background-color: $BG-BROWN;
                 line-height: 1em;
             }
             div {
