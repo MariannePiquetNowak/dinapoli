@@ -6,7 +6,7 @@ const NavMenu = ({setType}) => {
 
     const toggleClass = (e) => {
         e.preventDefault();
-        let classes = '';
+            let classes = '';
         let els = document.getElementsByClassName('active');
         if(els){
             while (els[0]) {
@@ -14,6 +14,7 @@ const NavMenu = ({setType}) => {
             }
         }
         e.target.className = classes.replace('','active');
+        
     }
     
     return (

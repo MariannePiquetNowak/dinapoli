@@ -12,8 +12,13 @@ const Menu = () => {
 
     const [type, setType] = useState('pizza') // by default
     const [special, setSpecial] = useState([]);
+    const [panuozzos, setPanuozzo] = useState([]);
+    const [desserts, setDessert] = useState([]);
+    const [pizzas, setPizza] = useState([]);
     const status = "true"
+    const published = "published"
 
+    // Pizza hedbo
     useEffect(() => {
         fetch(getItemsFilter("hebdo_items", `[active]=${status}`))
         .then(res => res.json())
@@ -21,16 +26,41 @@ const Menu = () => {
         .catch(err => console.error(`Erreur lors de la récupération de la pizza hebdo`, err))
     }, [])
 
-    console.log(special)
+
+    // Pizzas 
+    useEffect(() => {
+        fetch(getItemsFilter("menu_items", `[categorie]=pizza&filter[status]=${published}`))
+        .then(res => res.json())
+        .then(datas =>setPizza(datas.data))
+        .catch(err => console.error(`Erreur lors de la récupération des pizzas`, err))
+
+    }, [])
+
+    // Panuozzo
+    useEffect(() => {
+        fetch(getItemsFilter("menu_items", `[categorie]=panuozzo&filter[status]=${published}`))
+        .then(res => res.json())
+        .then(datas => setPanuozzo(datas.data))
+        .catch(err => console.error(`Erreur lors de la récupération des panuozzos`, err))
+    }, [pizzas])
+
+    // Dessert
+    useEffect(() => {
+        fetch(getItemsFilter("menu_items", `[categorie]=dessert&filter[status]=${published}`))
+        .then(res => res.json())
+        .then(datas => setDessert(datas.data))
+        .catch(err => console.error(`Erreur lors de la récupération des desserts`, err))
+    }, [panuozzos])
+
 
     const renderSwitch = (param) => {
         switch(param) {
             case 'panuozzo': 
-                return <Panuozzos />
+                return <Panuozzos panuozzos={panuozzos} />
             case 'dessert':
-                return <Dessert />;
+                return <Dessert desserts={desserts} />
             default: 
-                return <Pizza />;
+                return <Pizza pizzas={pizzas}/>;
         }
     }
 
@@ -42,15 +72,21 @@ const Menu = () => {
                 {renderSwitch(type)}
             </div>
             {
-                special.map(item => (
-                    <Special 
-                        key={item.id} 
-                        categorie={item.categorie} 
-                        name={item.name}
-                        price={item.price}
-                        text={item.texte}
-                        />
-                ))
+                special.map(item => {
+                    let file_id = item.image;
+                    const assets_url = `http://localhost:8055/assets/${file_id}`;
+                    return (
+                        <Special 
+                            key={item.id} 
+                            categorie={item.categorie} 
+                            name={item.name}
+                            price={item.price}
+                            text={item.texte}
+                            img={assets_url}
+                            />
+                    )
+                    
+                })
             }
         </section>
     )
@@ -58,15 +94,15 @@ const Menu = () => {
 
 export default Menu;
 
-const Special = ({categorie, name, price, text}) => {
+const Special = ({categorie, name, price, text, img}) => {
     return (
         <div className="special">
+            <h1 className="pt-5">La spécialité de la semaine</h1>
             <Card className={`pb-md-5 pb-lg-5 my-5 mx-3 mx-md-3 mx-lg-5`}>
-                <Card.Img variant="top" src="" />
-                
+                <Card.Img src={img} />
                     <FoodLine name={name} price={price} text={text}  />
-                
             </Card>
+            <div className="bg"></div>
         </div>
     )
 }

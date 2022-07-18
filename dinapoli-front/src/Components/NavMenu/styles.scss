@@ -32,11 +32,14 @@
     }
 }
 
+
 // $BREAKPOINT-TABLET: 480px;
 @media only screen and (min-width: $BREAKPOINT-MOBILE-LAND) {
     .navbar-menu {
         ul {
             flex-direction: row;
+
+            li button {font-size: $MD-FONT !important;}
         }
     }
 }
