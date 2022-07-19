@@ -22,7 +22,20 @@
             font-size: $SM-FONT;
         }
     }
+    // OPTIONS 
     .reverse {flex-direction: column-reverse;}
+
+    .btn-section { 
+        display: flex; 
+        justify-content: center; 
+    }
+    .btn { 
+        background-color: $BTN-COLOR; 
+        border: $BTN-COLOR 1px solid; 
+        transition: all .5s;
+
+    }
+    .btn:hover { background-color: $BTN-HOVER-COLOR; border: $BTN-HOVER-COLOR 1px solid; }
 }
 
 
@@ -35,11 +48,15 @@
         .card-img, .card-img-top {width: $MD-WIDTH;}
 
         .card-body {
-            padding-right: 3em !important;
+            padding: 0 3em !important;
             h2 {
                 text-align: start;
                 font-size: $MD-TITLE;
             }
+        }
+        .btn-section { 
+            display: flex; 
+            justify-content: start; 
         }
     }
 

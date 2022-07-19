@@ -18,3 +18,15 @@ code {
 
 h1, h2, h3 { font-family: 'daughter-of-fortune', Arial, sans-serif; }
 p, h4,h5 { font-family: 'Roboto', Arial, sans-serif; }
+
+@media screen and (min-width: 1280px) {
+  
+  .header-card {
+    padding:15em 0;
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 35em;
+  }
+}

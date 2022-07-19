@@ -1,6 +1,5 @@
 import React from 'react';
-import FoodLine from '../FoodLine/FoodLine'
-import { getItemsFilter } from '../../services/constants';
+import FoodLine from '../../Components/FoodLine/FoodLine';
 
 function Pizza({pizzas}) {
 

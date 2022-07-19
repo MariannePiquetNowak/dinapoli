@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header>
             <Nav />
-            <div className='header__bg' style={{ backgroundImage: `url(${headImg})`, backgroundSize: `cover`, backgroundPosition: `center` }}> </div>
+            {/* <div className='header__bg' style={{ backgroundImage: `url(${headImg})`, backgroundSize: `cover`, backgroundPosition: `center` }}> </div> */}
             <div className="header__container animate__animated animate__fadeInDown">
                 <img src={logo} alt="dinapoli-logo" />
                 <div className="header__text">

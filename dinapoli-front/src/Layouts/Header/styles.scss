@@ -1,6 +1,10 @@
 header {
     height:600px;
     width: 100vw;
+    background-image: url("../../assets/images/header-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     .header {
         &__bg {
             width: 100%;
@@ -54,7 +58,7 @@ header {
                 div {
                     text-align: start;
                 }
-                img {min-width: $SM-WIDTH; height: $SM-WIDTH;}
+                img {min-width: $MD-WIDTH; height: $MD-WIDTH;}
                 div, img {margin: 0 1em;}
             }
         }
@@ -81,7 +85,8 @@ header {
 // $BREAKPOINT-DESK: 1280px;
 @media only screen and (min-width: $BREAKPOINT-DESK) {
     header {
-        height: 100vh;
+        position: relative;
+        height: 150vh;
         .header {
             &__container {
                 div {

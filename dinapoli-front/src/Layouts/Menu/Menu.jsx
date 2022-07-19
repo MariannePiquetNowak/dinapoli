@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from "react-bootstrap";
-import NavMenu from '../NavMenu/NavMenu';
+import NavMenu from '../../Components/NavMenu/NavMenu';
 import Pizza from './Pizza';
 import Panuozzos from './Panuozzo';
 import Dessert from './Dessert';
-import FoodLine from '../FoodLine/FoodLine';
+import FoodLine from '../../Components/FoodLine/FoodLine';
 
 import { getItemsFilter } from '../../services/constants';
 
@@ -65,7 +65,7 @@ const Menu = () => {
     }
 
     return (
-        <section className="py-2 py-md-3 menu">
+        <section className="pt-2 pt-md-3 menu">
             <div className="parallax-menu"></div>
                 <NavMenu reference={type} setType={setType} />
             <div className="row px-md-3 px-lg-5">

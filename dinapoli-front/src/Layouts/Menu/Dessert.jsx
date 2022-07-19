@@ -1,5 +1,6 @@
 import React from 'react';
-import FoodLine from '../FoodLine/FoodLine'
+import FoodLine from '../../Components/FoodLine/FoodLine';
+
 
 const Dessert = ({desserts}) => {
 

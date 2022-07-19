@@ -1,5 +1,6 @@
 import React from 'react';
-import FoodLine from '../FoodLine/FoodLine'
+import FoodLine from '../../Components/FoodLine/FoodLine';
+
 
 function Panuozzo({panuozzos}) {
 

@@ -3,11 +3,13 @@
 @import "./global.scss";
 
 // layouts 
-@import "../../layouts/Header/styles.scss";
+@import "../../Layouts/Header/styles.scss";
+@import "../../Layouts/Menu/styles.scss";
+@import "../../Layouts/IconServices/styles.scss";
+@import "../../Layouts/BlogAccess/styles.scss";
+
 
 //components
 @import "../../Components/Navbar/styles.scss";
 @import "../../Components/Card/styles.scss";
-@import "../../Components/IconServices/styles.scss";
 @import "../../Components/NavMenu/styles.scss";
-@import "../../Components/Menu/styles.scss";

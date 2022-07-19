@@ -109,7 +109,7 @@
             }
         }
         .bg { 
-            background: url("../../assets/images/olive.png");
+            background: url("../../assets/images/olive-2.png");
             background-repeat: no-repeat; 
             background-position-y: 3em; 
             background-position-x: center; 
@@ -180,5 +180,6 @@
 @media screen and (min-width: $BREAKPOINT-MOBILE-LAND) {
     .bg {
         width: 600px !important;
+        background-image: url("../../assets/images/olive.png") !important;
     }
 }
