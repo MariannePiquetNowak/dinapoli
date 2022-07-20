@@ -1,0 +1,73 @@
+.info { 
+    width: 100%;
+    padding: 2em 5em;
+    text-align: center;
+    position: relative;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    
+
+    .parallax-info {
+        background: url("../../assets/images/dinapoli-biga.png");
+        background-attachment: fixed; 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        height: 750px !important;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        
+    }
+    .Card-dinapoli  {
+        position: sticky;
+        // top: 0;
+        z-index: 2;
+        max-width: 800px !important;
+        h2 { font-size: $MD-TITLE; }
+        span { font-size: $LG-TITLE; }
+    }
+
+}
+
+
+@media screen and (min-width: $BREAKPOINT-MOBILE-LAND) {
+    .info .parallax-info { 
+        height: 550px !important;
+    }
+    
+}
+
+@media screen and (min-width: $BREAKPOINT-TABLET) {
+    .info {
+        text-align: start;
+        justify-content: flex-end;
+
+        .parallax-info { 
+            height: 450px !important;
+        }
+    }
+}
+
+@media screen and (min-width: $BREAKPOINT-DESK) {
+    .info {
+        text-align: start;
+        display: flex;
+        justify-content: flex-end;
+
+        .parallax-info { 
+            height: 550px !important;
+        }
+
+        .Card-dinapoli {
+            padding-right: 10em;
+            span { font-size: $XL-TITLE; }
+            h2 { font-size: $LG-TITLE; }
+            p { font-size: $MD-FONT; }
+        }
+    }
+}

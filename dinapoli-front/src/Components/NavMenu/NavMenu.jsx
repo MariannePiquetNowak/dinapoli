@@ -19,7 +19,7 @@ const NavMenu = ({setType}) => {
     
     return (
         <>
-            <nav className={`navbar-menu mb-5`}>
+            <nav className={`navbar-menu mb-5 mt-5`}>
                 <ul>
                     <li className={`menu-items`}><button className="active" onClick={(e) => {
                         toggleClass(e)

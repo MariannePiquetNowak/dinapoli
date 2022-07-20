@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 
-const Cardy = ({ reverse, img, title, text, link, href, hrefText, otherClass }) => {
+const Cardy = ({ reverse, img, title, text, link, href, hrefText, otherClass}) => {
   return (
     <div className={`Card-dinapoli component ${otherClass}`}>
       <Card className={`pt-3 pb-md-5 pb-lg-5 my-5 ${reverse} mx-3 mx-md-3 mx-lg-5`}>
