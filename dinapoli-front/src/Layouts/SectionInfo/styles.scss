@@ -1,54 +1,50 @@
 .info { 
     width: 100%;
-    padding: 2em 5em;
     text-align: center;
-    position: relative;
+    position: sticky;
     background-color:transparent;
     display: flex;
     justify-content: center;
     align-items: center !important;
+    background-color:$BG-BDARK;
     
 
     .parallax-info {
-        background: url("../../assets/images/dinapoli-biga.png");
+        background: url("../../assets/images/bakery-dough.jpg");
+        opacity: 0.25;
         background-attachment: fixed; 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
-        height: 750px !important;
+        top: 0;
         width: 100vw;
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         z-index: 1;
-        
     }
+
     .Card-dinapoli  {
         position: sticky;
         // top: 0;
         z-index: 2;
         max-width: 800px !important;
-        h2 { font-size: $MD-TITLE; }
-        span { font-size: $LG-TITLE; }
+        h2 { font-size: $SM-TITLE; }
+        span { font-size: $MD-TITLE; }
     }
 
 }
 
-
-@media screen and (min-width: $BREAKPOINT-MOBILE-LAND) {
-    .info .parallax-info { 
-        height: 550px !important;
-    }
-    
-}
 
 @media screen and (min-width: $BREAKPOINT-TABLET) {
     .info {
         text-align: start;
         justify-content: flex-end;
+        padding: 0 5em;
 
-        .parallax-info { 
-            height: 450px !important;
+        .Card-dinapoli {
+            h2 { font-size: $MD-TITLE; }
+            span { font-size: $LG-TITLE; }
         }
     }
 }
@@ -58,10 +54,6 @@
         text-align: start;
         display: flex;
         justify-content: flex-end;
-
-        .parallax-info { 
-            height: 550px !important;
-        }
 
         .Card-dinapoli {
             padding-right: 10em;
