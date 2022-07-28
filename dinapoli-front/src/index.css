@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -13,7 +14,7 @@ code {
 }
 
 #root {
-  background: linear-gradient(180deg, #9C6644 0%, #582F0E 65.1%);
+  background: linear-gradient(180deg, #9C6644 0%, #391E08 120%) !important;
 }
 
 h1, h2, h3 { font-family: 'daughter-of-fortune', Arial, sans-serif; }
