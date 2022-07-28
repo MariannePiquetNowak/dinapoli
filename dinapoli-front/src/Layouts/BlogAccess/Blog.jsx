@@ -9,6 +9,7 @@ const BlogAccess = () => {
             <Cardy
                 reverse="reverse" 
                 title="Un peu d'histoire sur la Pizza" 
+                name={null}
                 text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros augue, dapibus ac quam non, fringilla placerat ex." 
                 img={img} 
                 link={true}

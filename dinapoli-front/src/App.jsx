@@ -38,6 +38,7 @@ const Card = () => {
           otherClass="header-card"
           reverse="reverse"
           title="Le Savoir-faire, un état d'esprit"
+          name={null}
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros augue, dapibus ac quam non, fringilla placerat ex."
           img={img}
           link={false}
@@ -52,6 +53,7 @@ const Card = () => {
           otherClass="header-card"
           reverse="reverse"
           title="Et si on parlait de Nous ?"
+          name={null}
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros augue, dapibus ac quam non, fringilla placerat ex. In eros augue, dapibus ac quam non, fringilla placerat ex."
           img={img}
           link={false}
@@ -66,6 +68,7 @@ const Card = () => {
           otherClass="header-card"
           reverse="reverse"
           title="Quand la Squadra s'amuse"
+          name={null}
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros augue, dapibus ac quam non, fringilla placerat ex."
           img={img}
           link={false}
@@ -80,6 +83,7 @@ const Card = () => {
           otherClass="header-card"
           reverse="reverse"
           title="Nos produits, un respect pour la pizza"
+          name={null}
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eros augue, dapibus ac quam non, fringilla placerat ex."
           img={img}
           link={false}

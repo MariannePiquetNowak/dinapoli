@@ -17,8 +17,8 @@
         h2 { 
             font-size: $SM-TITLE;
             margin: .5em 0;
-            text-align: center;
         }
+        h2, h3 { text-align: center;}
         p{
             font-family: $TEXT;
             font-size: $SM-FONT;
@@ -51,10 +51,9 @@
 
         .card-body {
             padding: 0 3em !important;
-            h2 {
-                text-align: start;
-                font-size: $MD-TITLE;
-            }
+            h2 { font-size: $MD-TITLE; }
+            h3 { font-size: $SM-TITLE; }
+            h2, h3 { text-align: start;}
         }
         .btn-section { 
             display: flex; 
