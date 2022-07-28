@@ -9,7 +9,9 @@
     }
     .card-img, .card-img-top {
         border-radius: 10px !important; 
-        width: $SM-WIDTH}
+        width: $SM-WIDTH;
+        filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+    }
     .card-body {
         padding: 0;
         h2 { 

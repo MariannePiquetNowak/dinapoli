@@ -1,0 +1,9 @@
+@media screen and (min-width: $BREAKPOINT-TABLET) {
+    .blog-access {
+        background-image: url("../../assets/images/pizza-blog.png");
+        background-repeat: no-repeat;
+        background-position-x: -17em;
+        background-position-y: -12em !important;
+        background-size: 1000px 1000px;
+    }
+}
