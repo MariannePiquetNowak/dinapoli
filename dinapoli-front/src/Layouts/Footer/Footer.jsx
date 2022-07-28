@@ -25,13 +25,13 @@ function Footer() {
   // console.log(address)
 
   return (
-    <footer className="py-5">
+    <footer className="pt-5 pb-1">
       <div>
         <h1>Pizza Di Napoli</h1>
       </div>
       <section className="contact my-3">
         <div className="contact__hours">
-          <p style={{fontWeight: "bold"}}>HORAIRES</p>
+          <p style={{ fontWeight: "bold" }}>HORAIRES</p>
           <div>
             <span>Ouvert midi et soir</span>
             <p>Du mardi au samedi</p>
@@ -43,52 +43,88 @@ function Footer() {
         </div>
 
         <div className="contact__address">
-          <p style={{fontWeight: "bold"}}>ADRESSE</p>
-        {
-          address && (
-              <div key={address.id}>
-                <div className="address">
-                  <i className="fa fa-map-marker" aria-hidden="true"></i>
-                  <div>
-                    <p>{address.num_street}, {address.name_street}</p>
-                    <p>{address.code_postal}, {address.ville}</p>
-                  </div>
-                </div>
-                <div className="phone">
-                  <i className="fa fa-phone" aria-hidden="true"></i>
-                  <p>Téléphone : {address.telephone}</p>
-                </div>
-                <div className="mail">
-                <i className="fa fa-envelope-o" aria-hidden="true"></i>
-                  <p>E-mail : <a href={`mailto:${address.mail}?subject=Demande venant du site`}>{address.mail}</a></p>
-                </div>
-              </div>
-            )
-        }
+          {address && (
+            <table key={address.id}>
+              <thead>
+                <tr>
+                  <th className="tab-title" colspan="2"><p>ADRESSE</p></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" style={{ verticalAlign: "baseline" }}>
+                    <i className="fa fa-map-marker" aria-hidden="true"></i>
+                  </th>
+                  <td>
+                    <p>
+                      {address.num_street}, {address.name_street}
+                    </p>
+                    <p>
+                      {address.code_postal}, {address.ville}
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    {" "}
+                    <i className="fa fa-phone" aria-hidden="true"></i>
+                  </th>
+                  <td>
+                    <p>Téléphone : {address.telephone}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <i className="fa fa-envelope-o" aria-hidden="true"></i>
+                  </th>
+                  <td>
+                    <p>
+                      E-mail :{" "}
+                      <a
+                        href={`mailto:${address.mail}?subject=Demande venant du site`}
+                      >
+                        {address.mail}
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          )}
         </div>
       </section>
-      <section  className="social my-2">
+      <section className="social my-2">
         <h2>Retrouvez nous aussi sur</h2>
         <div className="social__items py-2">
           {socials &&
             socials.map((social) => (
-                <a
-                  key={social.id}
-                  href={social.lien}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className={social.icon}></i>
-                </a>
-          ))}
+              <a
+                key={social.id}
+                href={social.lien}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className={social.icon}></i>
+              </a>
+            ))}
         </div>
       </section>
       <section className="copyright my-2">
-              <a href="/legacy" className="copyright__items">Mentions légales</a>
-              <a href="https://marianne-pn.xyz" target="_blank" rel="noreferrer" className="copyright__items">By Marianne Piquet-Nowak</a>
-              <span className="copyright__items">Pizza Di Napoli 2022 &copy; Tous droits réservés</span>
+        <a href="/legacy" className="copyright__items">
+          Mentions légales
+        </a>
+        <a
+          href="https://marianne-pn.xyz"
+          target="_blank"
+          rel="noreferrer"
+          className="copyright__items"
+        >
+          By Marianne Piquet-Nowak
+        </a>
+        <span className="copyright__items">
+          Pizza Di Napoli 2022 &copy; Tous droits réservés
+        </span>
       </section>
-
     </footer>
   );
 }
