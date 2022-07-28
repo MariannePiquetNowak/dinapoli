@@ -25,7 +25,7 @@ function Footer() {
   // console.log(address)
 
   return (
-    <footer className="pt-5 pb-1">
+    <footer id="contact" className="pt-5 pb-1">
       <div>
         <h1>Pizza Di Napoli</h1>
       </div>
@@ -47,7 +47,7 @@ function Footer() {
             <table key={address.id}>
               <thead>
                 <tr>
-                  <th className="tab-title" colspan="2"><p>ADRESSE</p></th>
+                  <th className="tab-title" colSpan="2"><p>ADRESSE</p></th>
                 </tr>
               </thead>
               <tbody>

@@ -1,9 +1,16 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./Layouts/Header/Header";
+
+// Views (Pages)
 import Home from './Views/Home/Home';
 import Blog from './Views/Blog/Blog';
+import Team from './Views/Team/Team';
+
+// Components
 import Cardy from './Components/Card/Card';
 import img from "./assets/images/image-1.png"
+
+// Layouts
+import Header from "./Layouts/Header/Header";
 import Footer from "./Layouts/Footer/Footer";
 
 export default function App() {
@@ -26,6 +33,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
       <Footer />
     </>
